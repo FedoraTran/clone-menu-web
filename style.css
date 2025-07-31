@@ -22,9 +22,8 @@ header {
 }
 
 .logo {
-  font-weight: bold;
-  font-size: 24px;
-  color: green;
+ width: 70px;
+ height: 62px;
 }
 
 .search {
@@ -87,7 +86,7 @@ main {
 
 .product {
   background-color: #fff;
-  padding: 15px;
+  padding: 15px 0;
   width: 200px;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -100,7 +99,6 @@ main {
 }
 
 .product .tag {
-  background-color: #b51a1a;
   color: white;
   padding: 2px 5px;
   font-size: 12px;
@@ -109,8 +107,12 @@ main {
 }
 
 .product h4 {
-  font-size: 16px;
+  font-size: 14px;
   margin: 5px 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
 }
 
 .product .price {
@@ -187,4 +189,15 @@ main {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+}
+
+.tag-container {
+  width: 100%;
+  background-color: rgb(183, 28, 28);
+  display: flex;
+ border-radius: 0 0 4px 4px;
+}
+
+.item-name {
+  color: #006F3C;
 }
