@@ -1,4 +1,4 @@
-root{
+:root{
     --primary: #006F3C;
     --secondary: #B71C1C;
     --tertiary: #ECEFF1;
@@ -108,10 +108,11 @@ main {
 
 .product .tag {
   color: white;
-  padding: 2px 5px;
+  padding: 2px 40px;
   font-size: 12px;
   margin: 5px 0;
-  display: inline-block;
+  display: flex;
+  justify-content: space-between;
 }
 
 .product h4 {
@@ -153,6 +154,7 @@ main {
     max-width: 1200px;
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     justify-content: space-between;
     margin-bottom: 20px;
     
@@ -229,6 +231,9 @@ main {
  border-radius: 0 0 4px 4px;
 }
 
+
+
 .item-name {
   color: #006F3C;
 }
+
